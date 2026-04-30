@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -30,10 +36,12 @@ img {
   height: auto;
 }
 
-.container{
-  
+button {
+    font-family: inherit;
+    color: currentColor;
 }
 
-.section{
+input {
+    font-family: inherit;
 
 }
