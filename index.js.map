@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sources":["../src/scripts/modal.js"],"sourcesContent":["console.log('modal.js is connected');"],"names":[],"mappings":"ssBAAA,QAAQ,IAAI,uBAAuB"}
