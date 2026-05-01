@@ -1,0 +1,119 @@
+
+.benefits .container {
+    max-width: 375px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+
+}
+
+.section.benefits {
+    padding: 64px 0;
+    margin: auto;
+    
+   /* align-items: center;
+    justify-content: center;*/
+}
+
+.benefits .skin{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.main-header{
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    /*max-width: 335px;*/
+    text-align: center;
+}
+
+/*********************************************************************************/
+.ul-benefits {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.li-benefits {
+
+ /*  display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;*/
+    
+}
+
+.sec-header-benefits {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: #000000;
+    
+}
+
+.card-benefits{
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 32px 12px;
+    /*width: 335px;*/
+    height: 100%;
+
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+
+}
+
+.text-benefits{
+font-family: "Mulish", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+letter-spacing: 0;
+color: #000000;
+}
+
+
+/*********************************************************************************/
+
+@media screen and (min-width: 768px) {
+    .benefits .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .benefits .container {
+        max-width: 1440px;
+        padding: 0 64px;
+    }
+
+    .main-header {
+        font-size: 40px;
+        max-width: 870px;
+        /*text-align: center;*/
+    }
+
+    .ul-benefits {
+        flex-direction: row;
+        gap: 32px;
+        
+    }
+    .li-benefits{
+        width: calc((100% - 64px)/3);
+    }
+}
