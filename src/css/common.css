@@ -1,36 +1,38 @@
 .container {
   margin: 0 auto;
   max-width: 375px;
+  padding-inline: 20px;
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding-inline: 32px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    padding-inline: 64px;
   }
 }
 
 .section {
-  padding-inline: 20px;
+
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    padding-inline: 32px;
+
   }
 }
 
 @media screen and (min-width: 1440px) {
   .section {
-    padding-inline: 64px;
+
   }
 }
-
 
 .visually-hidden {
   position: absolute;
