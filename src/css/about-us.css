@@ -1,0 +1,109 @@
+.about-us {
+    background-color: #ffffff;
+}
+.about-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-block: 56px;
+    padding-inline: 20px;
+    min-width: 375px;
+}
+.about-us-img{
+    width: 335px;
+    height: 335px;
+    margin-bottom: 32px;
+}
+.about-us-title{
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #000;
+    margin-bottom: 24px;
+}
+.about-us-text{
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 24px;
+}
+.about-us-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+.about-us-list-item{
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 335px;
+    min-height: 27px;
+}
+.about-us-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    fill: #111111;
+}
+@media screen and (min-width: 768px) {
+    .about-us{
+        padding-block: 112px;
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+    .about-us-container{
+        padding-inline: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .about-us-img {
+        display: block;
+        width: 704px;
+        height: 456px;
+        object-fit: cover;
+    }
+    .about-us-list{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .about-us-container{
+        flex-direction: row;
+        align-items: center;
+        padding-inline: 64px;;
+    }
+    .about-us-img {
+        width: 640px;
+        height: 456px;
+        flex-shrink: 0;
+        margin-bottom: 0;
+        padding-right: 32px;
+    }
+    .about-us-content {
+        width: auto;
+        flex: 1;
+    }
+    .about-us-list{
+        width: 100%;
+    }
+    .about-us-title {
+        font-size: 48px;
+    }
+}
