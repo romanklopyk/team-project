@@ -1,4 +1,4 @@
-<section class="section contacts">
+<section class="section contacts" id="contacts">
   <div class="container contact-container">
     <div class="contact-header">
       <h3 class="contact-header-text">Connect</h3>
@@ -16,6 +16,8 @@
             </svg>
             <p class="contact-item-text">Email</p>
             <a
+              target="_blank"
+              rel="noopener noreferer"
               class="contact-item-link"
               href="mailto:info@handmadejewelry.com"
             >info@handmadejewelry.com</a
@@ -26,7 +28,7 @@
               <use href="./img/svg/sprite.svg#icon-phone" />
             </svg>
             <p class="contact-item-text">Phone</p>
-            <a class="contact-item-link" href="tel:+15550000000"
+            <a rel="noopener noreferer" target="_blank" class="contact-item-link" href="tel:+15550000000"
             >+1 (555) 000-0000</a
             >
           </li>
@@ -35,30 +37,42 @@
               <use href="./img/svg/sprite.svg#icon-geolocation" />
             </svg>
             <p class="contact-item-text">Office</p>
-            <a class="contact-item-link" href="#"
+            <a target="_blank" rel="noopener noreferer" class="contact-item-link"
+               href="https://share.google/bh4f6CdYnyyHFJWtM"
             >76-8 Oakington Manor Dr, London, UK</a
             >
           </li>
         </ul>
       </address>
       <form class="contact-form">
-        <label for="name" class="contact-form-label"> Name* </label>
-        <input
-          class="contact-form-item user-name-input"
-          type="text"
-          id="name"
-          name="user-name"
-          placeholder="Tony"
-        />
-        <label for="phone" class="contact-form-label">Phone*</label>
-        <input
-          type="tel"
-          name="user-phone"
-          id="phone"
-          placeholder="+1 234 123 23"
-          class="contact-form-item user-phone-input"
-        />
-
+        <div class="name-input-wrapper flex column">
+          <label for="name" class="contact-form-label"> Name* </label>
+          <input
+            class="contact-form-item user-name-input"
+            type="text"
+            id="name"
+            name="user-name"
+            placeholder="Tony"
+            required
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid name, try again</p>
+        </div>
+        <div class="phone-input-wrapper flex column">
+          <label for="phone" class="contact-form-label">Phone*</label>
+          <input
+            type="tel"
+            name="user-phone"
+            id="phone"
+            placeholder="+1 234 123 23"
+            class="contact-form-item user-phone-input"
+            required
+            pattern="^\+[0-9\s]{14}$"
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid phone number, try again</p>
+        </div>
         <label for="textarea" class="contact-form-label"
         >Describe what you want</label
         >
@@ -67,6 +81,7 @@
           name="textarea"
           id="textarea"
 
+          maxlength="500"
           placeholder="Type your message..."
         ></textarea>
         <button class="form-submit-button" type="submit">Submit</button>

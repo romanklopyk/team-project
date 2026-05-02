@@ -1,6 +1,19 @@
+.contacts address {
+  font-style: normal;
+}
+
+.flex {
+  display: flex;
+
+}
+
+.column {
+  flex-direction: column;
+}
+
 .contact-container {
   padding-block: 64px;
-  background-color: orange;
+  /*background-color: orange;*/
 }
 
 .contact-header-text {
@@ -33,12 +46,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  background-color: blueviolet;
-  /*background-color: orange;*/
 }
 
 .contact-info {
-background-color: chartreuse;
+
 }
 
 .contact-info-list {
@@ -74,8 +85,8 @@ background-color: chartreuse;
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  background-color: aqua;
+  /*gap: 16px;*/
+  /*background-color: aqua;*/
 }
 
 .contact-form-label {
@@ -92,6 +103,12 @@ background-color: chartreuse;
   padding: 8px 12px;
   outline: none;
   max-width: 100%;
+  height: 40px;
+  transition: border 0.3s ease-in-out;
+}
+
+.contact-form-item:is(:focus, :hover) {
+  border: thin solid #CCC16E;
 }
 
 .contact-form-item::placeholder {
@@ -111,18 +128,74 @@ background-color: chartreuse;
 .form-submit-button {
   padding-block: 6px;
   cursor: pointer;
-  border: none;
   padding: 6px 12px;
   min-width: 335px;
   height: 36px;
   outline: none;
   background-color: #CCC16E;
+  border: thin solid #CCC16E;
   font-family: "Mulish", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.form-submit-button:is(:hover, :focus) {
+    background-color: transparent;
+}
+.form-submit-button:active {
+  background-color: #CCC16E;
+}
+
+/*----------validation---------------*/
+.name-input-wrapper, .phone-input-wrapper {
+  position: relative;
+}
+
+.text-valid, .text-invalid {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  display: none;
+}
+
+.text-valid {
+  color: green;
+}
+
+.text-invalid {
+  color: red;
+}
+
+.user-name-input:not(:placeholder-shown):invalid,
+.user-phone-input:not(:placeholder-shown):invalid {
+  border: thin solid red;
+  color: red;
+}
+
+.user-name-input:not(:placeholder-shown):valid,
+.user-phone-input:not(:placeholder-shown):valid {
+  border: thin solid green;
+}
+
+.user-name-input:not(:placeholder-shown):invalid ~ .text-invalid,
+.user-phone-input:not(:placeholder-shown):invalid ~ .text-invalid {
+  display: block;
+}
+
+.user-name-input:not(:placeholder-shown):valid ~ .text-valid,
+.user-phone-input:not(:placeholder-shown):valid ~ .text-valid {
+  display: block;
 
 }
+
+/*////////////////////////////////////////*/
+
 
 @media screen and (min-width: 768px) {
   .contact-info-list {
@@ -139,8 +212,8 @@ background-color: chartreuse;
   }
 
   .form-submit-button {
-    max-width: 249px;
-    width: 100%;
+   width: 249px;
+
   }
 }
 
@@ -151,28 +224,26 @@ background-color: chartreuse;
     max-width: 1312px;
   }
 
-  .contact-info-item {
-    width: 218px;
-    background-color: burlywood;
-  }
-
-  .contact-info{
+  .contact-info {
     order: 2;
-    /*width: 640px;*/
-
   }
 
-  .contact-info-list{
+  .contact-info-list {
     flex-wrap: wrap;
+    /*background-color: blueviolet;*/
+    width: 640px;
     height: 248px;
+    gap: 32px;
   }
 
-  .contact-info-item{
+  .contact-info-item {
     width: 304px;
+    height: 108px;
     flex-shrink: 0;
+    /*background-color: burlywood;*/
   }
 
-  .contact-form{
+  .contact-form {
     order: 1;
     max-width: 704px;
     width: 100%;
@@ -180,8 +251,7 @@ background-color: chartreuse;
   }
 
   .form-submit-button {
-    max-width: 192px;
-    width: 100%;
+    width: 192px;
   }
 
 }
