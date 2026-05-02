@@ -38,7 +38,7 @@
 }
 
 .contact-info {
-
+background-color: chartreuse;
 }
 
 .contact-info-list {
@@ -75,6 +75,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  background-color: aqua;
 }
 
 .contact-form-label {
@@ -152,16 +153,18 @@
 
   .contact-info-item {
     width: 218px;
+    background-color: burlywood;
   }
 
   .contact-info{
     order: 2;
-    width: 640px;
+    /*width: 640px;*/
 
   }
 
   .contact-info-list{
     flex-wrap: wrap;
+    height: 248px;
   }
 
   .contact-info-item{
