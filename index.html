@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/team-project/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proj-10</title>
+    <title>Handmade Jewelry</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/team-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-project/assets/index-Ds4BMrxL.css">
+    <link rel="stylesheet" crossorigin href="/team-project/assets/index-DQIuYQdp.css">
   </head>
 
   <body>
@@ -148,7 +148,7 @@
         </div>
     </div>
 </section>
-      <section class="section gallery">
+      <section class="section gallery" id="gallery">
   <div class="container gallery-container">
     <h2 class="gallery-title">Jewelry Showcase</h2>
     <p class="gallery-description">
@@ -291,10 +291,96 @@
         </ul>
     </div>
 </section>
-      <section class="section contacts">
-    <div class="container">
-        contacts
+      <section class="section contacts" id="contacts">
+  <div class="container contact-container">
+    <div class="contact-header">
+      <h3 class="contact-header-text">Connect</h3>
+      <h2 class="contact-header-title">Order your unique jewelry</h2>
+      <p class="contact-header-description">
+        We'd love to hear more details from you!
+      </p>
     </div>
+    <div class="contacts-container-wrapper">
+      <address class="contact-info">
+        <ul class="contact-info-list">
+          <li class="contact-info-item">
+            <svg class="contact-item-icon" width="32" height="32">
+              <use href="/team-project/assets/sprite-D6t9pV9T.svg#icon-email" />
+            </svg>
+            <p class="contact-item-text">Email</p>
+            <a
+              target="_blank"
+              rel="noopener noreferer"
+              class="contact-item-link"
+              href="mailto:info@handmadejewelry.com"
+            >info@handmadejewelry.com</a
+            >
+          </li>
+          <li class="contact-info-item">
+            <svg class="contact-item-icon" width="32" height="32">
+              <use href="/team-project/assets/sprite-D6t9pV9T.svg#icon-phone" />
+            </svg>
+            <p class="contact-item-text">Phone</p>
+            <a rel="noopener noreferer" target="_blank" class="contact-item-link" href="tel:+15550000000"
+            >+1 (555) 000-0000</a
+            >
+          </li>
+          <li class="contact-info-item">
+            <svg class="contact-item-icon" width="32" height="32">
+              <use href="/team-project/assets/sprite-D6t9pV9T.svg#icon-geolocation" />
+            </svg>
+            <p class="contact-item-text">Office</p>
+            <a target="_blank" rel="noopener noreferer" class="contact-item-link"
+               href="https://share.google/bh4f6CdYnyyHFJWtM"
+            >76-8 Oakington Manor Dr, London, UK</a
+            >
+          </li>
+        </ul>
+      </address>
+      <form class="contact-form">
+        <div class="name-input-wrapper flex column">
+          <label for="name" class="contact-form-label"> Name* </label>
+          <input
+            class="contact-form-item user-name-input"
+            type="text"
+            id="name"
+            name="user-name"
+            placeholder="Tony"
+            required
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid name, try again</p>
+        </div>
+        <div class="phone-input-wrapper flex column">
+          <label for="phone" class="contact-form-label">Phone*</label>
+          <input
+            type="tel"
+            name="user-phone"
+            id="phone"
+            placeholder="+1 234 123 23"
+            class="contact-form-item user-phone-input"
+            required
+            pattern="^\+[0-9\s]{14}$"
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid phone number, try again</p>
+        </div>
+        <label for="textarea" class="contact-form-label"
+        >Describe what you want</label
+        >
+        <textarea
+          class="contact-form-item form-textarea"
+          name="textarea"
+          id="textarea"
+
+          maxlength="500"
+          placeholder="Type your message..."
+        ></textarea>
+        <button class="form-submit-button" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </section>
     </main>
     <footer class="footer">
