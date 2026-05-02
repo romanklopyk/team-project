@@ -1,16 +1,21 @@
 .header {
-    height: 72px;
+    width: 100%;
     background-color: #FFFFFF;
+    border-bottom: 1px solid #ececec;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 20px;
-    padding-left: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 1000;
-    max-width: 1440px;
-    margin: 0 auto;
+    height: 72px;
 }
 
 .logo-link {
@@ -47,6 +52,11 @@
 }
 
 @media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
     .burger-btn {
         display: none;
     }
@@ -105,6 +115,10 @@
 }
 
 @media (min-width: 1440px) {
+    .container {
+        max-width: 1440px;
+    }
+
     .DesktopNav {
         margin-left: 32px;
         margin-right: 0;
