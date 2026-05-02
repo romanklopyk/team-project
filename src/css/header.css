@@ -34,11 +34,11 @@
         display: none;
     }
 
-    .LogoSvg{
+    .LogoSvg {
         height: 36px;
         width:84px;
     }
-    .header{
+    .header {
         padding-left: 32px;
         padding-right: 32px;
     }
@@ -83,6 +83,7 @@
         transition: background-color 0.2s;
         margin-left: auto;
         font-size: 16px;
+        border-radius: 5px;
     }
 
     .OrderBtn:hover {
@@ -92,18 +93,19 @@
 
 @media (min-width: 1440px) {
 
-    .header{
+    .header {
         justify-content: flex-start;
     }
 
-    .DesktopNav{
+    .DesktopNav {
         width: 424px;
         margin-left: 32px;
     }
 
-    .OrderBtn{
+    .OrderBtn {
         justify-self: flex-end;
         width: 192px;
         text-justify: center;
+        border-radius: 5px;
     }
 }
