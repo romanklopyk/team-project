@@ -101,12 +101,12 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container {
+    .testimonials .container {
         max-width: 768px;
         margin: 0 auto;
         padding: 0 32px;
     }
-    
+
     .testimonials-list {
         display: flex;
         flex-direction: row;
@@ -116,19 +116,19 @@
         width: 704px;
         margin: 0 auto;
     }
-    
+
     .testimonials-item {
         display: block;
         width: auto;
         flex: 0 0 auto;
     }
-    
+
     .testimonial-img {
         width: 203px;
         height: 260px;
         object-fit: cover;
     }
-    
+
     .testimonial-card {
         width: 250px;
         height: 260px;
@@ -139,11 +139,11 @@
         flex-direction: column;
         box-sizing: border-box;
     }
-    
+
     .testimonial-text {
         font-size: 16px;
     }
-    
+
     .testimonials-title {
         font-size: 36px;
         margin-bottom: 28px;
@@ -151,7 +151,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
+    .testimonials .container {
         max-width: 1440px;
         padding-left: 64px;
         padding-right: 64px;
