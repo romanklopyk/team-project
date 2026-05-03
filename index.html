@@ -19,40 +19,35 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/team-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-project/assets/index-69dlFgGa.css">
+    <link rel="stylesheet" crossorigin href="/team-project/assets/index-rREhYpx3.css">
   </head>
 
   <body>
     <header class="header">
-  <svg class="LogoSvg">
-    <use href="/team-project/assets/logo-qmeGA_Tr.svg"></use>
-  </svg>
-  <svg class="MenuSvg" id="menuToggle" style="cursor:pointer;">
-    <use href="data:image/svg+xml,%3csvg%20width='16'%20height='12'%20viewBox='0%200%2016%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%200H16V2H0V0ZM0%205H16V7H0V5ZM0%2010H16V12H0V10Z'%20fill='black'/%3e%3c/svg%3e"></use>
-  </svg>
-  <svg class="CloseBtn" id="menuClose" style="display:none;">
-    <use href="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M16.192%206.34424L11.949%2010.5862L7.70697%206.34424L6.29297%207.75824L10.535%2012.0002L6.29297%2016.2422L7.70697%2017.6562L11.949%2013.4142L16.192%2017.6562L17.606%2016.2422L13.364%2012.0002L17.606%207.75824L16.192%206.34424Z'%20fill='black'%20/%3e%3c/svg%3e"></use>
-  </svg>
-  <nav class="DesktopNav">
-    <a href="#">About us</a>
-    <a href="#">Benefits</a>
-    <a href="#">Gallery</a>
-    <a href="#">Testimonials</a>
-    <a href="#">Contacts</a>
-  </nav>
-  <a href="#" class="OrderBtn">Order Now</a>
-</header>
+  <div class="container header-container">
+  <a href="/" class="logo-link">
+    <svg class="LogoSvg">
+      <use href="/team-project/assets/logo-qmeGA_Tr.svg"></use>
+    </svg>
+  </a>
 
-<div class="MobileMenuOverlay" id="mobileMenu">
-  <nav class="MobileNav">
-    <a href="#">About us</a>
-    <a href="#">Benefits</a>
-    <a href="#">Gallery</a>
-    <a href="#">Testimonials</a>
-    <a href="#">Contacts</a>
+  <button type="button" class="burger-btn" id="menuToggle">
+    <svg class="MenuSvg">
+      <use href="data:image/svg+xml,%3csvg%20width='16'%20height='12'%20viewBox='0%200%2016%2012'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%200H16V2H0V0ZM0%205H16V7H0V5ZM0%2010H16V12H0V10Z'%20fill='black'/%3e%3c/svg%3e"></use>
+    </svg>
+  </button>
+
+  <nav class="DesktopNav">
+    <a href="#about-us">About us</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contacts">Contacts</a>
   </nav>
-  <a href="#" class="MobileOrderBtn">Order Now</a>
-</div>
+
+  <a href="#order" class="OrderBtn">Order Now</a>
+  </div>
+</header>
 
 <script src="/scripts/headerslide.js"></script>
     <main>
