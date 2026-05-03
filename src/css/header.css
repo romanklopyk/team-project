@@ -1,19 +1,41 @@
 .header {
-    height: 72px;
+    width: 100%;
     background-color: #FFFFFF;
+    border-bottom: 1px solid #ececec;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    padding-right: 12px;
-    padding-left: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    height: 72px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
 }
 
 .LogoSvg {
     width: 149px;
     height: 47px;
+}
+
+.burger-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .MenuSvg {
@@ -30,27 +52,32 @@
 }
 
 @media (min-width: 768px) {
-    .MenuSvg {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .burger-btn {
         display: none;
     }
 
-    .LogoSvg{
+    .LogoSvg {
         height: 36px;
-        width:84px;
+        width: 84px;
     }
-    .header{
+
+    .header {
         padding-left: 32px;
         padding-right: 32px;
+        justify-content: flex-start;
     }
 
     .DesktopNav {
         display: flex;
         align-items: center;
-        gap: 16px;
-        width: 404px;
-        height: 24px;
-        justify-self: center;
-        justify-content: space-evenly;
+        gap: 24px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .DesktopNav a {
@@ -69,19 +96,16 @@
 
     .OrderBtn {
         display: inline-flex;
-        align-items: center;      
-        justify-content: center;  
-        text-align: center;       
-        width: 119px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         background-color: #CCC16E;
         color: black;
         text-decoration: none;
         padding: 12px 24px;
-        font-size: 15px;
         font-family: inherit;
         white-space: nowrap;
         transition: background-color 0.2s;
-        margin-left: auto;
         font-size: 16px;
     }
 
@@ -91,19 +115,17 @@
 }
 
 @media (min-width: 1440px) {
-
-    .header{
-        justify-content: flex-start;
+    .container {
+        max-width: 1440px;
     }
 
-    .DesktopNav{
-        width: 424px;
+    .DesktopNav {
         margin-left: 32px;
+        margin-right: 0;
     }
 
-    .OrderBtn{
-        justify-self: flex-end;
+    .OrderBtn {
+        margin-left: auto;
         width: 192px;
-        text-justify: center;
     }
 }
