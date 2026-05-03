@@ -26,7 +26,7 @@
 .LogoSvg {
     width: 149px;
     height: 47px;
-    fill: #000;
+    fill: currentColor;
     color: #000;
 }
 
@@ -44,7 +44,7 @@
 .MenuSvg {
     width: 16px;
     height: 12px;
-    fill: #000;
+    fill: currentColor;
     color: #000;
 }
 
