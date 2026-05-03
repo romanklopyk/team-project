@@ -126,13 +126,10 @@
 }
 
 .form-submit-button {
-  padding-block: 6px;
   cursor: pointer;
   padding: 6px 12px;
-  /*min-width: 335px;*/
   width: 100%;
   max-width: 335px;
-  height: 36px;
   outline: none;
   background-color: #CCC16E;
   border: thin solid #CCC16E;
@@ -141,6 +138,7 @@
   font-size: 16px;
   line-height: 150%;
   transition: background-color 0.3s ease-in-out;
+  /*background-color: #8668C7;*/
 }
 
 .form-submit-button:is(:hover, :focus) {
@@ -255,6 +253,7 @@
 
   .form-submit-button {
     width: 192px;
+
   }
 
 }
