@@ -12,8 +12,9 @@
   visibility: hidden;
 
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal.is-open {
@@ -81,7 +82,9 @@
 .modal-item-link {
   text-decoration: none;
   color: #000;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-item-link:is(:hover, :focus) {
@@ -89,19 +92,37 @@
 }
 
 .modal-item-link:active {
-  color: #8668C7;
+  color: #8668c7;
 }
-
 
 .modal .order-now {
   font-family: 'Mulish', sans-serif;
   font-weight: 500;
   line-height: 1.5;
   color: #000;
+  text-align: center;
   background-color: #ccc16e;
   border: 1px solid #ccc16e;
   padding: 6px 12px;
   /*max-width: 335px;*/
+}
+
+.modal .order-now:hover,
+.modal .order-now:focus {
+  border: 1px solid #ccc16e;
+  background-color: #fff;
+}
+
+.modal .order-now:active {
+  border: 1px solid #ccc16e;
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+  background-color: #ccc16e;
+}
+
+.modal .order-now:disabled {
+  border: 1px solid #ccc16e;
+  background-color: #ccc16e;
+  opacity: 0.3;
 }
 
 @media screen and (min-width: 768px) {
