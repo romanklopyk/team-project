@@ -26,7 +26,10 @@
 .LogoSvg {
     width: 149px;
     height: 47px;
+    fill: #000;
+    color: #000;
 }
+
 
 .burger-btn {
     background: none;
@@ -41,6 +44,8 @@
 .MenuSvg {
     width: 16px;
     height: 12px;
+    fill: #000;
+    color: #000;
 }
 
 .DesktopNav {
