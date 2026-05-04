@@ -89,6 +89,10 @@
         margin-right: auto;
     }
 
+    .nav{
+        display: block;
+    }
+
     .DesktopNav a {
         text-decoration: none;
         color: black;
