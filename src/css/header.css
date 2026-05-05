@@ -1,27 +1,58 @@
 .header {
-    height: 72px;
+    width: 100%;
     background-color: #FFFFFF;
+    border-bottom: 1px solid #ececec;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-    padding-right: 12px;
-    padding-left: 20px;
-    width: 100%;
-    box-sizing: border-box;
+    height: 72px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
 }
 
 .LogoSvg {
     width: 149px;
     height: 47px;
+    fill: currentColor;
+    color: #000;
+}
+
+
+.burger-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .MenuSvg {
-    width: 16px;
-    height: 12px;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    color: #000;
 }
 
 .DesktopNav {
+    display: none;
+}
+
+.nav{
     display: none;
 }
 
@@ -30,27 +61,36 @@
 }
 
 @media (min-width: 768px) {
-    .MenuSvg {
+    .container {
+        max-width: 768px;
+        padding: 0 32px;
+    }
+
+    .burger-btn {
         display: none;
     }
 
-    .LogoSvg{
+    .LogoSvg {
         height: 36px;
-        width:84px;
+        width: 84px;
     }
-    .header{
+
+    .header {
         padding-left: 32px;
         padding-right: 32px;
+        justify-content: flex-start;
     }
 
     .DesktopNav {
         display: flex;
         align-items: center;
-        gap: 16px;
-        width: 404px;
-        height: 24px;
-        justify-self: center;
-        justify-content: space-evenly;
+        gap: 24px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav{
+        display: block;
     }
 
     .DesktopNav a {
@@ -60,50 +100,56 @@
         font-weight: 400;
         font-family: inherit;
         white-space: nowrap;
-        transition: opacity 0.2s;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .DesktopNav a:hover {
-        opacity: 0.6;
+    .DesktopNav a:is(:hover, :focus) {
+        text-decoration: underline;
+    }
+
+    .DesktopNav a:active {
+        color: #8668C7;
+        text-decoration: none;
     }
 
     .OrderBtn {
         display: inline-flex;
-        align-items: center;      
-        justify-content: center;  
-        text-align: center;       
-        width: 119px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
         background-color: #CCC16E;
+        border: 1px solid #CCC16E;
         color: black;
         text-decoration: none;
         padding: 12px 24px;
-        font-size: 15px;
         font-family: inherit;
         white-space: nowrap;
-        transition: background-color 0.2s;
-        margin-left: auto;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         font-size: 16px;
     }
 
     .OrderBtn:hover {
-        background-color: #9e8f38;
+        background-color: transparent;
+    }
+
+    .OrderBtn:active {
+        box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+        background-color:#CCC16E;
     }
 }
 
 @media (min-width: 1440px) {
-
-    .header{
-        justify-content: flex-start;
+    .container {
+        max-width: 1440px;
     }
 
-    .DesktopNav{
-        width: 424px;
+    .DesktopNav {
         margin-left: 32px;
+        margin-right: 0;
     }
 
-    .OrderBtn{
-        justify-self: flex-end;
+    .OrderBtn {
+        margin-left: auto;
         width: 192px;
-        text-justify: center;
     }
 }
