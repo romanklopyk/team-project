@@ -4,18 +4,24 @@
 .about-us-container {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
     flex-direction: column;
     padding-top: 56px;
     padding-bottom: 56px;
     padding-block: 56px;
     padding-inline: 20px;
-    min-width: 375px;
+    /*min-width: 375px;*/
+    width: 100%;
+    max-width: 375px;
 }
 .about-us-img{
-    width: 335px;
-    height: 335px;
+    /*width: 335px;*/
+    /*height: 335px;*/
+    width: 100%;
+    max-width: 335px;
+    height: auto;
     margin-bottom: 32px;
+    object-fit: cover;
 }
 .about-us-title{
     font-family: "Sora", sans-serif;
@@ -53,7 +59,8 @@
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    width: 335px;
+    /*width: 335px;*/
+    width: 100%;
     min-height: 27px;
 }
 .about-us-icon{
@@ -65,18 +72,20 @@
 @media screen and (min-width: 768px) {
     .about-us{
         padding-block: 112px;
-        padding-top: 112px;
-        padding-bottom: 112px;
     }
     .about-us-container{
+        max-width: 768px;
         padding-inline: 32px;
-        padding-left: 32px;
-        padding-right: 32px;
     }
     .about-us-img {
         display: block;
-        width: 704px;
-        height: 456px;
+        width: 100%;
+        max-width: 768px;
+        /*max-width: 704px;*/
+        height: auto;
+        margin-bottom: 32px;
+        /*width: 704px;*/
+        /*height: 456px;*/
         object-fit: cover;
     }
     .about-us-list{
@@ -85,9 +94,10 @@
 }
 @media screen and (min-width: 1440px) {
     .about-us-container{
+        max-width: 1440px;
         flex-direction: row;
         align-items: center;
-        padding-inline: 64px;;
+        /*padding-inline: 64px;;*/
     }
     .about-us-img {
         width: 640px;

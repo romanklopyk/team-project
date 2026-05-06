@@ -4,12 +4,12 @@
     border-bottom: 1px solid #ececec;
 }
 
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    padding: 0 20px;
-    margin: 0 auto;
-}
+/*.container {*/
+/*    min-width: 320px;*/
+/*    max-width: 375px;*/
+/*    padding: 0 20px;*/
+/*    margin: 0 auto;*/
+/*}*/
 
 .header-container {
     display: flex;
