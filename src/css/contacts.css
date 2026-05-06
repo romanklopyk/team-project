@@ -2,18 +2,8 @@
   font-style: normal;
 }
 
-.flex {
-  display: flex;
-
-}
-
-.column {
-  flex-direction: column;
-}
-
 .contact-container {
   padding-block: 64px;
-  /*background-color: orange;*/
 }
 
 .contact-header-text {
@@ -48,18 +38,10 @@
   gap: 32px;
 }
 
-.contact-info {
-
-}
-
 .contact-info-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-.contact-info-item {
-
 }
 
 .contact-item-icon {

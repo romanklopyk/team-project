@@ -9,10 +9,10 @@
     padding-top: 56px;
     padding-bottom: 56px;
     padding-block: 56px;
-    padding-inline: 20px;
+    /*padding-inline: 20px;*/
     /*min-width: 375px;*/
     width: 100%;
-    max-width: 375px;
+    /*max-width: 375px;*/
 }
 .about-us-img{
     /*width: 335px;*/
@@ -100,11 +100,12 @@
 
 @media screen and (min-width: 768px) {
     .about-us{
-        padding-block: 112px;
+        /*padding-block: 112px;*/
     }
     .about-us-container{
-        max-width: 768px;
-        padding-inline: 32px;
+        /*max-width: 768px;*/
+        padding-block: 112px;
+      /*padding-inline: 32px;*/
     }
     .about-us-img {
         display: block;
