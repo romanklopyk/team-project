@@ -1,25 +1,25 @@
 
 .benefits .container {
-    max-width: 375px;
-    width: 100%;
-    padding: 0 20px;
-    margin: 0 auto;
+    /*max-width: 375px;*/
+    /*width: 100%;*/
+    /*padding: 0 20px;*/
+    /*margin: 0 auto;*/
 
 }
 
 .section.benefits {
     padding: 64px 0;
-    margin: auto;
+    /*margin: auto;*/
 }
 
-.benefits .skin{
+.benefits .skin {
     display: flex;
     flex-direction: column;
     gap: 32px;
     align-items: center;
 }
 
-.main-header{
+.main-header {
     font-family: "Sora", sans-serif;
     font-weight: 400;
     color: #000000;
@@ -46,10 +46,10 @@
     line-height: 1.4;
     letter-spacing: -0.01em;
     color: #000000;
-    
+
 }
 
-.card-benefits{
+.card-benefits {
 
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 32px 12px;
@@ -64,28 +64,28 @@
 
 }
 
-.text-benefits{
-font-family: "Mulish", sans-serif;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-text-align: center;
-letter-spacing: 0;
-color: #000000;
+.text-benefits {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0;
+    color: #000000;
 }
 
 
 @media screen and (min-width: 768px) {
     .benefits .container {
-        max-width: 768px;
-        padding: 0 32px;
+        /*max-width: 768px;*/
+        /*padding: 0 32px;*/
     }
 }
 
 @media screen and (min-width: 1440px) {
     .benefits .container {
-        max-width: 1440px;
-        padding: 0 64px;
+        /*max-width: 1440px;*/
+        /*padding: 0 64px;*/
     }
 
     .main-header {
@@ -96,9 +96,10 @@ color: #000000;
     .ul-benefits {
         flex-direction: row;
         gap: 32px;
-        
+
     }
-    .li-benefits{
-        width: calc((100% - 64px)/3);
+
+    .li-benefits {
+        width: calc((100% - 64px) / 3);
     }
 }

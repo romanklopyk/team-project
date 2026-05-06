@@ -16,7 +16,6 @@
 .hero-container {
     width: 100%;
     max-width: 375px;
-
     padding-top: 160px;
     padding-bottom: 152px;
 }
@@ -45,7 +44,7 @@
 .hero-btn {
     display: block;
     width: 100%;
-    max-width: 335px;
+    max-width: 100%;
     padding: 12px 24px;
     background-color: #CCC16E;
     border: 1px solid #CCC16E;
