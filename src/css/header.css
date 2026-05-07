@@ -21,6 +21,7 @@
 .logo-link {
     display: flex;
     align-items: center;
+    padding-block: 12px;
 }
 
 .LogoSvg {
@@ -71,8 +72,10 @@
     }
 
     .LogoSvg {
+
         height: 36px;
         width: 84px;
+
     }
 
     .header {
