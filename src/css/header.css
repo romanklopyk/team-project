@@ -79,8 +79,8 @@
     }
 
     .header {
-        padding-left: 32px;
-        padding-right: 32px;
+        /*padding-left: 32px;*/
+        /*padding-right: 32px;*/
         justify-content: flex-start;
     }
 
